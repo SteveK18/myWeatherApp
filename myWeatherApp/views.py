@@ -12,7 +12,7 @@ from django.contrib.auth.decorators import login_required
 # Create your views here.
 #Function to read and use the API key to fetch data for a POST request
 def index(request):
-    API_KEY = open("C:\\Users\\k_ste\Desktop\\Django\\weatherProject\\myWeatherApp\\API_KEY", "r").read()
+    API_KEY = "" #Comment: Sign up to openweathermap.org to get a personal API key that you can use to run this code
     weather_data= "https://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&APPID={}"
     forecast = "https://api.openweathermap.org/data/2.5/onecall?lat={}&lon={}&exclude=current,minutely,hourly,alerts&appid={}"
 
