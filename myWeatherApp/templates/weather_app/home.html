@@ -1,0 +1,21 @@
+{% extends 'weather_app/base.html' %}
+
+{% block content %} 
+   <div class="midpage">
+   {% comment %} <h3>Top Tier Weather</h3>         {% endcomment %}
+        <h1>Check the weather of any city</h1>
+        <form class="search-bar" method="post">
+            {% csrf_token %}
+            <input type="text" name="city" placeholder="City">
+            <button class ="search" type="submit">Search</button>    
+        </form>
+        <div class="weather display">
+        {% if weather_output %}
+                <div class="">
+                    {% include "weather_app/output.html" with weather_output=weather_output%}
+                </div>
+        {% endif %}
+    </div>
+{% endblock %}
+
+

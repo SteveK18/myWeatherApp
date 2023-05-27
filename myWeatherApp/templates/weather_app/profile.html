@@ -1,0 +1,10 @@
+{% extends 'weather_app/base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+<div class="container">  
+    <h1>{{user.username}}</h1>
+    <h2>{{user.email}}</h2>
+</div>   
+{% endblock %}

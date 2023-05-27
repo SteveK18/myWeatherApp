@@ -1,0 +1,8 @@
+{% if weather_output %}
+<div class="weather-output" >
+    <h1>{{ weather_output.City }}</h1>
+    <h2>{{ weather_output.Temperature }} °F</h2>
+    <h3>{{ weather_output.Description }}</h3>
+    <img src="http://openweathermap.org/img/w/{{ weather_output.icon }}.png"> 
+</div>
+{% endif %}

@@ -1,0 +1,47 @@
+/* @import url("weather_app/style.css"); */
+
+/* ===================================================
+	Tablet and Desktop Devices: Greater than 480 pixels
+   ===================================================
+*/
+/* @media (min-width: 480px){
+
+} */
+
+/* ============================================
+	Mobile Devices: 0 - 480 pixels
+   ============================================
+*/
+@media (max-width: 480px){
+    .side-nav {
+        display: flex;
+        width: 100%;
+        
+     }
+     .header {
+        display: flex;
+        order: 99;
+        padding-left: 11%;
+
+        padding-right: 8%;
+        flex-grow: 3;
+        flex-shrink: 1;
+        height: 20%;
+     }
+     body {
+        order: 100; 
+     }
+
+     .logo{
+        visibility: hidden;
+        width: 0;
+     }
+     .top-nav{
+        padding-left: 11%;
+
+        padding-right: 8%;
+        flex-grow: 3;
+        flex-shrink: 1;
+        height: 20%;
+     }
+} 

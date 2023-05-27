@@ -1,0 +1,110 @@
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    	
+ } */
+
+.header {
+    width: 100%;
+
+    height: 15vh;
+
+    background: linear-gradient(#6E72FC, #AEE1F9);/*rgb(159, 159, 211); */
+   
+    padding-left: 11%;
+
+    padding-right: 8%;
+    
+ }
+
+.top-nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 15px;
+    border-bottom: 1px rgb(12, 46, 81); 
+
+ }
+
+.top-nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.top-nav ul li a {
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: 17px;
+}
+ 
+.top-nav button, .register-page button, .midpage button, .login-page button {
+    background-color:rgb(95, 117, 215);
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.top-nav button a, .midpage button {
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: 15px;
+}
+
+.side-nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100vh;
+}
+
+.logo{
+    width: 120px
+}
+
+.midpage{
+    text-align: center;
+    padding: 80px;
+    height: 85vh;
+    background: linear-gradient(#AEE1F9,#F6EBE6);
+
+}
+
+.midpage input{
+    border: 5;
+    outline: 0;
+    border-radius: 30px;
+    padding: 8px 30px;
+}
+
+.register-page{
+    padding: 80px;
+    height: 85vh;
+    background: linear-gradient(#AEE1F9,#F6EBE6);
+}
+
+.login-page{
+    padding: 80px;
+    height: 85vh;
+    background: linear-gradient(#AEE1F9,#F6EBE6);
+}
+
+.about-us{
+    padding: 80px;
+    height: 85vh;
+    background: linear-gradient(#AEE1F9,#F6EBE6);
+}
+
+.resources{
+    padding: 80px;
+    height: 85vh;
+    background: linear-gradient(#AEE1F9,#F6EBE6);
+}

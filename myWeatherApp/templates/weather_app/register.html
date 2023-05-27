@@ -1,0 +1,22 @@
+{% extends 'weather_app/base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<div class="register-page" >
+    <form action="" method="POST">
+        {% csrf_token %}
+        <fieldset class="form-group">
+            <legend>Join Now</legend>
+            {{ form|crispy }}
+        <fieldset>
+        <div class="form-group" id="signup-button">
+            <button type="submit" class="btn">Sign Up</button>
+        <div>
+        <div class="form-group">
+            <small class="text-muted ml-3"> Already have an account? <a href ="{% url 'login' %}"><button>Sign In</button></a></small>
+        </div>
+    </form>
+</div>
+{% endblock %}
